@@ -46,9 +46,11 @@ your-terminal$ julia
  _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
 |__/                   |
 
+julia> ENV["PYTHON"]=Sys.which("python3")
 julia> ] # type ] to switch pkg mode
 (v1.2) pkg> activate .
 (PPN) pkg> add https://github.com/terasakisatoshi/Gomah.jl.git
+(PPN) pkg> add Images ImageDraw Makie VideoIO
 (PPN) pkg> # press delete to back to repl mode
 julia> exit() # Done!
 ```
@@ -78,7 +80,7 @@ julia> include("demo/demo.jl")
 julia> democamera()
 ```
 
-- It will open web camera on your PC using VideoIO.jl and visualize result via Makie.jl
+- It will open web camera on your PC using VideoIO.jl and visualize result via ImageDraw.jl and Makie.jl.
 
 Enjoy.
 
@@ -89,5 +91,4 @@ Enjoy.
 - NMS algorithm is partially taken from ChainerCV project.
 - Demo script that takes image from camera and visualize its result is taken from VideoIO.jl. See [function play](https://github.com/JuliaIO/VideoIO.jl/blob/master/src/VideoIO.jl) for more detail.
 - Constructing neural network techniquie is taken from Chainer and Flux.
-- Image processing scripts can be refered from Images.jl
-
+- Some image processing utils can be refered from Images.jl
