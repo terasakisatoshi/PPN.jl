@@ -80,5 +80,14 @@ julia> democamera()
 
 - It will open web camera on your PC using VideoIO.jl and visualize result via Makie.jl
 
+Enjoy.
 
-# License
+
+# Credits
+
+- Base implementation namely Pre-trained model, Python scripts under `src/pyppn/*.py` and post-processing code are taken/referred from [Idein/chainer-pose-proposal-net](https://github.com/Idein/chainer-pose-proposal-net) under the terms of the [license](https://github.com/Idein/chainer-pose-proposal-net/blob/master/LICENSE)
+- NMS algorithm is partially taken from ChainerCV project.
+- Demo script that takes image from camera and visualize its result is taken from VideoIO.jl. See [function play](https://github.com/JuliaIO/VideoIO.jl/blob/master/src/VideoIO.jl) for more detail.
+- Constructing neural network techniquie is taken from Chainer and Flux.
+- Image processing scripts can be refered from Images.jl
+
