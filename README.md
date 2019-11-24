@@ -24,7 +24,7 @@ $ pip install chainer chainercv
 
 - Clone this repository and go to `PPN.jl/src` to download pre-trained model:
 
-```
+```console
 $ cd path/to/your/workspace
 $ git clone https://github.com/terasakisatoshi/PPN.jl.git
 $ cd PPN.jl/src
@@ -41,7 +41,7 @@ $ julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"insta
 
 - After installing PPN.jl and pre-trained model, Do the following procedure to add dependency `Gomah.jl` which is not official Julia package.
 
-```
+```console
 your-terminal$ cd path/to/your/workspace/PPN.jl
 your-terminal$ julia
                _
@@ -66,7 +66,7 @@ julia> exit() # Done!
 
 - Do the following procedure.
 
-```
+```console
 your-terminal$ cd path/to/your/workspace/PPN.jl
 your-terminal$ julia
                _
