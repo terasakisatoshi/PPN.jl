@@ -20,6 +20,8 @@ $ pip install chainer chainercv
 
 ## Install our application
 
+### Quick start
+
 - Clone this repository and go to `PPN.jl/src` to download pre-trained model:
 
 ```
@@ -28,7 +30,12 @@ $ git clone https://github.com/terasakisatoshi/PPN.jl.git
 $ cd PPN.jl/src
 $ wget https://github.com/Idein/chainer-pose-proposal-net/releases/download/v1.0/result.zip
 $ unzip result.zip
+$ julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"instantiate"'
 ```
+
+### Does not work ?
+- If the last operation `julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"instantiate"'` fails, please try the following procedure (Install Gomah.jl and add some dependencies manually).
+- Otherwise go to `Run our demo` section below.
 
 ## Install Gomah.jl
 
@@ -57,8 +64,6 @@ julia> exit() # Done!
 
 ## Run our demo
 
-### Quick start
-
 - Do the following procedure.
 
 ```
@@ -84,6 +89,10 @@ julia> democamera()
 
 Enjoy.
 
+
+# Tips
+
+- You should have skipped above procedure by Pkg.instantiate()
 
 # Credits
 
