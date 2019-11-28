@@ -1,8 +1,16 @@
+# For mac user
 .DS_Store
+# Julia
 /Manifest.toml
 /dev/
 /docs/build/
 /docs/site/
+
+# Python/Jupyter
 __pycache__/
 *.ipynb
 .ipynb_checkpoints/
+
+# Application
+*.zip
+/src/result
