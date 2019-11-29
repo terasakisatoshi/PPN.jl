@@ -3,6 +3,8 @@
 - This a Deep Learning based Pose Estimation Application using Julia.
 - We use pre-trained Chainer model provided by [idein/chainer-pose-proposal-net](https://github.com/Idein/chainer-pose-proposal-net), convert it to Flux via [Gomah.jl](https://github.com/terasakisatoshi/Gomah.jl) and finally create application that utilizes it.
 
+![](docs/result.png)
+
 # How to use
 
 - In this chapter, you'll learn how to use our software.
@@ -11,8 +13,8 @@
 
 ## Install Chainer and ChainerCV
 
-- Chainer is a deep learning framework that lets researchers quickly implement, train and evaluate deep learing models.
-- ChainerCV is a library for deep learning in computer vision.
+- [Chainer](https://chainer.org/) is a deep learning framework that lets researchers quickly implement, train and evaluate deep learing models.
+- [ChainerCV](https://github.com/chainer/chainercv) is a library for deep learning in computer vision.
 
 ```
 $ pip install chainer chainercv
@@ -37,9 +39,9 @@ $ julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"insta
 - If the last operation `julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"instantiate"'` fails, please try the following procedure (Install Gomah.jl and add some dependencies manually).
 - Otherwise go to `Run our demo` section below.
 
-## Install Gomah.jl
+## Install [Gomah.jl](https://github.com/terasakisatoshi/Gomah.jl)
 
-- After installing PPN.jl and pre-trained model, Do the following procedure to add dependency `Gomah.jl` which is not official Julia package.
+- After installing PPN.jl and pre-trained model, Do the following procedure to add dependency [Gomah.jl](https://github.com/terasakisatoshi/Gomah.jl) which is model converter from Chainer to Flux.
 
 ```console
 your-terminal$ cd path/to/your/workspace/PPN.jl
@@ -89,6 +91,9 @@ julia> democamera()
 
 Enjoy.
 
+# Documentation
+
+See [my note for Julia Tokyo @2019/11/29](docs/juliatokyo20191129.pdf)
 
 # Credits
 
