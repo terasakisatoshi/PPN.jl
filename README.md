@@ -13,9 +13,10 @@
 
 - Chainer is a deep learning framework that lets researchers quickly implement, train and evaluate deep learing models.
 - ChainerCV is a library for deep learning in computer vision.
+- Also, we need NumPy as dependencies for our application.
 
 ```
-$ pip install chainer chainercv
+$ pip install chainer chainercv numpy
 ```
 
 ## Install our application
