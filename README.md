@@ -15,9 +15,10 @@
 
 - [Chainer](https://chainer.org/) is a deep learning framework that lets researchers quickly implement, train and evaluate deep learing models.
 - [ChainerCV](https://github.com/chainer/chainercv) is a library for deep learning in computer vision.
+- Also, we need NumPy as dependencies for our application.
 
 ```
-$ pip install chainer chainercv
+$ pip install chainer chainercv numpy
 ```
 
 ## Install our application
@@ -32,7 +33,8 @@ $ git clone https://github.com/terasakisatoshi/PPN.jl.git
 $ cd PPN.jl/src
 $ wget https://github.com/Idein/chainer-pose-proposal-net/releases/download/v1.0/result.zip
 $ unzip result.zip
-$ julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"instantiate"'
+$ cd ../
+$ julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"add https://github.com/terasakisatoshi/Gomah.jl.git"; pkg"instantiate"'
 ```
 
 ### Does not work ?
