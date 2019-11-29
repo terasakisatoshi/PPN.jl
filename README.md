@@ -30,7 +30,8 @@ $ git clone https://github.com/terasakisatoshi/PPN.jl.git
 $ cd PPN.jl/src
 $ wget https://github.com/Idein/chainer-pose-proposal-net/releases/download/v1.0/result.zip
 $ unzip result.zip
-$ julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"instantiate"'
+$ cd ../
+$ julia --project=. -e 'ENV["PYTHON"]=Sys.which("python3"); using Pkg; pkg"add https://github.com/terasakisatoshi/Gomah.jl.git"; pkg"instantiate"'
 ```
 
 ### Does not work ?
